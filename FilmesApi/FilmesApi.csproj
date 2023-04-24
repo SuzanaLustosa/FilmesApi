@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\NovaPasta1\**" />
+    <Compile Remove="Data\NovaPasta2\**" />
+    <Compile Remove="Data\NovaPasta3\**" />
+    <Compile Remove="Data\NovaPasta4\**" />
+    <Compile Remove="Data\NovaPasta\**" />
+    <Content Remove="Data\NovaPasta1\**" />
+    <Content Remove="Data\NovaPasta2\**" />
+    <Content Remove="Data\NovaPasta3\**" />
+    <Content Remove="Data\NovaPasta4\**" />
+    <Content Remove="Data\NovaPasta\**" />
+    <EmbeddedResource Remove="Data\NovaPasta1\**" />
+    <EmbeddedResource Remove="Data\NovaPasta2\**" />
+    <EmbeddedResource Remove="Data\NovaPasta3\**" />
+    <EmbeddedResource Remove="Data\NovaPasta4\**" />
+    <EmbeddedResource Remove="Data\NovaPasta\**" />
+    <None Remove="Data\NovaPasta1\**" />
+    <None Remove="Data\NovaPasta2\**" />
+    <None Remove="Data\NovaPasta3\**" />
+    <None Remove="Data\NovaPasta4\**" />
+    <None Remove="Data\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+</Project>
